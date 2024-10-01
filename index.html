@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Børneklaner App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigationsmenu -->
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#welcome-screen">Velkomst</a></li>
+            <li><a href="#map-screen">Kort</a></li>
+            <li><a href="#create-clan-screen">Opret Klan</a></li>
+            <li><a href="#missions-screen">Missioner</a></li>
+            <li><a href="#profile-screen">Profil</a></li>
+        </ul>
+    </nav>
+
+    <!-- Velkomstskærm -->
+    <section id="welcome-screen" class="screen">
+        <h1>Velkommen til Børneklaner!</h1>
+        <p>Opret din egen klan og udforsk naturen sammen med dine venner!</p>
+        <button class="btn">Kom i gang</button>
+        <img src="images/frontpage.jpg" alt="Børn i naturen" class="welcome-image">
+    </section>
+
+    <!-- Kortskærm -->
+    <section id="map-screen" class="screen">
+        <h2>Udforsk verden!</h2>
+        <div class="map-container">
+            <div class="map-point clan-area">
+                <img src="images/field1.jpg" alt="Klan Område 1">
+                <p>Klan Område 1</p>
+            </div>
+            <div class="map-point">
+                <img src="images/field2.jpg" alt="Klan Område 2">
+                <p>Klan Område 2</p>
+            </div>
+            <div class="map-point">
+                <img src="images/field3.jpg" alt="Klan Område 3">
+                <p>Klan Område 3</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opret Klan Skærm -->
+    <section id="create-clan-screen" class="screen">
+        <h2>Opret din Klan</h2>
+        <form>
+            <label for="clan-name">Klanens Navn:</label>
+            <input type="text" id="clan-name" name="clan-name" placeholder="Skriv klanens navn...">
+
+            <label for="clan-symbol">Vælg Symbol:</label>
+            <select id="clan-symbol" name="clan-symbol">
+                <option value="løve">Løve</option>
+                <option value="ulv">Ulv</option>
+                <option value="ørn">Ørn</option>
+                <option value="drage">Drage</option>
+            </select>
+
+            <button type="submit" class="btn">Opret Klan</button>
+        </form>
+        <img src="images/create-clan.jpg" alt="Opret Klan Illustration" class="form-image">
+    </section>
+
+    <!-- Missioner Skærm -->
+    <section id="missions-screen" class="screen">
+        <h2>Dine Missioner</h2>
+        <ul class="missions-list">
+            <li><img src="images/tree.jpg" alt="Mission Ikon"> Find et træ og tag et billede!</li>
+            <li><img src="images/stream.jpg" alt="Mission Ikon"> Udforsk et vandløb med din klan.</li>
+            <li><img src="images/leaf.jpg" alt="Mission Ikon"> Saml blade og lav en naturkrans.</li>
+        </ul>
+    </section>
+
+    <!-- Profil Skærm -->
+    <section id="profile-screen" class="screen">
+        <h2>Din Profil</h2>
+        <p>Klan: <strong>Ørnens Beskyttere</strong></p>
+        <p>Missioner fuldført: 5</p>
+        <p>Klanmedlemmer: 3</p>
+        <img src="images/avatar.jpg" alt="Profil Avatar" class="profile-avatar">
+    </section>
+
+</body>
+</html>

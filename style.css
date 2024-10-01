@@ -1,0 +1,198 @@
+/* Generelle indstillinger */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Navigationsmenu */
+.nav-menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #4caf50;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0;
+}
+
+.nav-menu ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-menu ul li a:hover {
+    color: #f4f4f4;
+}
+
+/* Skærme */
+.screen {
+    padding: 20px;
+    min-height: 100vh;
+    display: none; /* Skjul alle skærme som standard */
+}
+
+.screen:target {
+    display: block; /* Viser kun den skærm, der er i fokus */
+}
+
+/* Velkomstskærm */
+#welcome-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffeb3b;
+    text-align: center;
+}
+
+#welcome-screen h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#welcome-screen p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.welcome-image {
+    width: 100%; /* Gør billedet 100% af forældreelementets bredde */
+    height: auto; /* Bevarer billedets proportioner */
+    max-height: 70vh; /* Begrænser højden til 70% af viewportens højde */
+    object-fit: cover; /* Sikrer at billedet dækker uden at blive strukket uharmonisk */
+    margin-top: 20px; /* Justerer margin, så der er plads over billedet */
+}
+
+
+/* Kortskærm */
+#map-screen {
+    background-color: #e0f7fa;
+}
+
+.map-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.map-point {
+    background-color: #2196f3;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.map-point img {
+    max-width: 100px;
+}
+
+.map-point:hover {
+    background-color: #1976d2;
+}
+
+.clan-area {
+    background-color: #ff5722;
+}
+
+.clan-area:hover {
+    background-color: #e64a19;
+}
+
+/* Opret Klan Skærm */
+#create-clan-screen {
+    background-color: #fff9c4;
+}
+
+#create-clan-screen form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#create-clan-screen input,
+#create-clan-screen select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.form-image {
+    max-width: 200px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Missioner Skærm */
+#missions-screen {
+    background-color: #c8e6c9;
+}
+
+.missions-list {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.missions-list li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.missions-list li img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+/* Profil Skærm */
+#profile-screen {
+    background-color: #ffccbc;
+    text-align: center;
+}
+
+.profile-avatar {
+    max-width: 150px;
+    margin-top: 20px;
+}
+
+#profile-screen p {
+    font-size: 1.2rem;
+}
